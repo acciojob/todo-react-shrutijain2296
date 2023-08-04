@@ -8,7 +8,7 @@ let [newItem, setNewItem] = useState("");
 function addItems(event){
     event.preventDefault();
 
-    if(newItem.trim !== ""){
+    if(newItem.trim() !== ""){
         setListItem([...listItem, newItem]);
         setNewItem("");
     }    
