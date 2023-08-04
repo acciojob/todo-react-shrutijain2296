@@ -30,8 +30,8 @@ function removeItem(index){
                     <div key = {index}>
                         <ul>
                             <li>
-                                <p>{item}</p>
-                                <button onClick={() => removeItem(index)}>Delete</button>
+                                <p>{item} <button onClick={() => removeItem(index)}>Delete</button></p>
+                                
                             </li>
                         </ul>
                        
