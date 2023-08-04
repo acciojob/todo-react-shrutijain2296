@@ -28,8 +28,13 @@ function removeItem(index){
             {
                 listItem.map((item, index) =>(
                     <div key = {index}>
-                        <p>{item}</p>
-                        <button onClick={() => removeItem(index)}>Delete</button>
+                        <ul>
+                            <li>
+                                <p>{item}</p>
+                                <button onClick={() => removeItem(index)}>Delete</button>
+                            </li>
+                        </ul>
+                       
                     </div>
                 
                 )
